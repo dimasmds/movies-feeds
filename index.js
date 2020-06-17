@@ -24,7 +24,7 @@ class App {
         function sendSeeds() {
           const randomNumber = Math.floor((Math.random() * (movies.length - 1)));
           const movie = movies[randomNumber];
-          ws.send(`${movie.title}`);
+          ws.send(`**Informasi** Film ${movie.title} sudah tayang di bioskop! Jangan lupa untuk menonton yah!`);
 
           setTimeout(sendSeeds, 5000);
         }
