@@ -4,7 +4,7 @@ const fetch = require('node-fetch');
 class App {
   constructor() {
     this._movies = null;
-    this._server = new Server({ port: 5000 });
+    this._server = new Server({ port: process.env.PORT || 5000 });
     this._webSocket = null;
   }
 
